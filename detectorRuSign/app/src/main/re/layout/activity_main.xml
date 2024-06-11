@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@android:color/black"
+    tools:context=".MainActivity">
+
+	<TextView
+		android:id="@+id/title_text"
+		android:layout_width="wrap_content"
+		android:layout_height="58dp"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="35dp"
+		android:fontFamily="sans-serif-light"
+		android:gravity="center_horizontal"
+		android:text="@string/title"
+		android:textAppearance="@style/TextAppearance.AppCompat.Large"
+		android:textColor="@android:color/white"
+		android:textSize="20sp" />
+
+	<ImageView
+		android:id="@+id/pager_page_image"
+		android:layout_width="wrap_content"
+		android:layout_height="290dp"
+		android:layout_below="@id/title_text"
+		android:layout_gravity="center_horizontal"
+		android:layout_marginTop="32dp"
+		android:src="@drawable/welcome" />
+
+	<TextView
+		android:id="@+id/description"
+		android:layout_width="wrap_content"
+		android:layout_height="144dp"
+		android:layout_below="@id/pager_page_image"
+		android:layout_margin="32dp"
+		android:fontFamily="sans-serif-light"
+		android:gravity="center_horizontal"
+		android:text="@string/desc"
+		android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+		android:textColor="@android:color/white"
+		android:textSize="20sp" />
+
+
+	<com.google.android.material.bottomnavigation.BottomNavigationView
+		android:id="@+id/navigation"
+		style="@styles/BottomNavigation"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_gravity="bottom"
+		android:background="?android:attr/windowBackground"
+		app:itemIconTint="@color/black"
+		app:itemTextColor="@color/black"
+		app:menu="@menu/bottom_navigation_menu" 
+		app:labelVisibilityMode="labeled"
+		app:itemTextAppearanceActive="@style/BottomNavigationView.ActiveTextAppearance"
+		app:itemTextAppearanceInactive="@style/BottomNavigationView.InactiveTextAppearance"/>
+
+
+</RelativeLayout>

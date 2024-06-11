@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">detectorRuSign</string>
+    <string name="welcome_message">Добро пожаловать в приложение для распознавания дорожных знаков</string>
+    <string name="start_button">Начать</string>
+    <string name="camera_permission">Для работы приложения необходим доступ к камере.</string>
+    <string name="title">Распознавание знаков дорожного движения в реальном времени</string>
+    <string name="desc">Данное приложение предназначено для распознавания знаков дорожного движения РФ в режиме реального времени.</string>
+    <string name="home">Главная</string>
+    <string name="signs">Знаки</string>
+    <string name="rules">Правила</string>
+    <string name="camera">Камера</string>
+</resources>

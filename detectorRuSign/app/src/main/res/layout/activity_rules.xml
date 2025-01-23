@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Правила"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+		
+	<View
+		android:id="@+id/blackStripe"
+		android:layout_width="match_parent"
+		android:layout_height="3dp"
+		android:layout_marginTop="12dp"
+		android:background="@android:color/black"
+		app:layout_constraintTop_toBottomOf="@id/titleTextView"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintRight_toRightOf="parent" />
+
+    <ExpandableListView
+        android:id="@+id/expandableListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+		android:textSize="40sp"
+        app:layout_constraintTop_toBottomOf="@id/titleTextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintBottom_toTopOf="@id/navigation" />
+		
+	<com.google.android.material.bottomnavigation.BottomNavigationView
+		android:id="@+id/navigation"
+		style="@styles/BottomNavigation"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_gravity="bottom"
+		android:background="?android:attr/windowBackground"
+		app:itemIconTint="@color/black"
+		app:itemTextColor="@color/black"
+		app:menu="@menu/bottom_navigation_menu" 
+		app:labelVisibilityMode="labeled"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:itemTextAppearanceActive="@style/BottomNavigationView.ActiveTextAppearance"
+		app:itemTextAppearanceInactive="@style/BottomNavigationView.InactiveTextAppearance"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

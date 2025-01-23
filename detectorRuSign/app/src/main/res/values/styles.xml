@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BottomNavigation" parent="Widget.MaterialComponents.BottomNavigationView.Colored">
+        <item name="itemIconTint">@color/black</item>
+        <item name="itemTextColor">@color/black</item>
+        <item name="itemRippleColor">@color/gray</item> <!-- Цвет для нажатия -->
+        <item name="backgroundColor">@android:color/white</item>
+    </style>
+
+    <style name="BottomNavigationView.ActiveTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">14sp</item> <!-- Увеличенный размер текста -->
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="BottomNavigationView.InactiveTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">12sp</item>
+    </style>
+</resources>
